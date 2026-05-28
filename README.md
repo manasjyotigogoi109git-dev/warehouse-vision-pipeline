@@ -22,3 +22,9 @@ To ensure high-fidelity inputs that prevent system blind spots, the following op
 
 
 ![Warehouse Annotations](1.png)
+
+![Warehouse Annotations](2.png)
+
+![Warehouse Annotations](3.png)
+
+![Warehouse Annotations](4.png)
