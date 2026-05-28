@@ -1,20 +1,21 @@
-# Warehouse Inventory Data Annotation Project
+# Warehouse Fulfillment Data Auditing & Annotation Project
 
-A hands-on data labeling and classification project designed to train a computer vision system to recognize inventory boxes and shelving units. This project simulates the high-quality data annotation pipelines used in automated fulfillment centers and Amazon GO smart-retail systems.
+A data-centric quality assurance and image auditing project simulating the workflows used to maintain stow quality, inventory tracking accuracy, and defect reduction in automated fulfillment centers.
 
-## 📋 Project Overview
-- **Goal:** Accurately identify and isolate inventory assets to support automated stock tracking.
-- **Total Images Processed:** 14 warehouse environment photos.
-- **Labels (Classes) Created:** `Box`, `Shelf Space`.
+## 📦 Project Context
+In high-scale logistics, automated computer vision systems rely heavily on precision human judgment to correct errors, verify item locations, and handle edge cases. This project focuses on auditing and precisely labeling warehouse assets across 14 environment samples using strict data-entry standards.
 
-## 🔍 My Annotation Methodology & Quality Standards
-In data annotation, data quality is everything. I established a strict set of rules during this project to ensure the highest possible labeling accuracy:
+## 🏷️ Asset Tracking Breakdown
+- **Target Operations:** Inventory Tracking & Space Management
+- **Audit Categories (Classes):** `Inventory Box`, `Storage Shelf Space`
 
-1. **Tight Bounding Boxes:** I ensured all borders perfectly hugged the edges of the warehouse boxes with zero excess padding, preventing the AI from misinterpreting background noise.
-2. **Handling Obstructions (Occlusions):** When boxes overlapped or were partially hidden behind pillars or conveyor rails, I labeled only the visible boundaries to maintain data consistency.
-3. **Class Segregation:** Carefully separated empty shelf space from occupied shelf spaces so the system can accurately detect low-stock anomalies.
+## 🔍 Core Audit Methodology & Defect Reduction Standards
+To ensure high-fidelity inputs that prevent system blind spots, the following operational guidelines were strictly applied during image parsing:
 
-## 📈 Quality Analysis & Next Steps
-After running an initial verification pass through the system:
-- **Challenge:** The current sample size (14 images) represents a great foundational framework but requires more environmental diversity.
-- **Operational Scalability:** To prepare this dataset for a production-scale fulfillment environment, the next phase involves labeling 500+ edge-case images, focusing on low-light warehouse corners, damaged packages, and varied shelf angles to eliminate system blind spots.
+1. **Precision Bounding Box Alignment:** Frames were analyzed to ensure bounding boxes perfectly captured object boundaries with zero pixel leakage into background noise. This directly mimics operational metrics required for high-accuracy inventory counting.
+2. **Occlusion Management (Handling Blocked Items):** For overlapping items or boxes obscured by warehouse structural frames, judgment was applied to mark only the visible, active surface areas to keep classification inputs clean.
+3. **Low-Visibility Context Parsing:** Audited frames included various angles and simulated blurry/low-light shelf conditions to practice identifying package profiles in suboptimal environment settings.
+
+## 📉 Data Analysis & Scalability Framework
+- **Operational Reality:** A 14-image batch acts as a baseline validation loop.
+- **Scaling Action Plan:** To meet production standards for active tracking, the dataset would be expanded to include hundreds of human-verified entries focusing on damaged packaging profiles, multi-tier shelf stacking variations, and swift transit blur corrections.
