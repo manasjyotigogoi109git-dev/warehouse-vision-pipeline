@@ -28,3 +28,13 @@ To ensure high-fidelity inputs that prevent system blind spots, the following op
 ![Warehouse Annotations](3.png)
 
 ![Warehouse Annotations](4.png)
+
+
+
+
+## 🔍 Insights
+
+| Results View of 14 pictures |
+|:---:|:---:|
+| ![](5.png) | ![](6.png) |
+
