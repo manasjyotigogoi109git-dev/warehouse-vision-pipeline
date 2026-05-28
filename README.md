@@ -38,3 +38,16 @@ To ensure high-fidelity inputs that prevent system blind spots, the following op
 |:---:|:---:|
 | ![](5.png) | ![](6.png) |
 
+
+## 📊 Dataset Evaluation & Initial Metrics
+An initial validation loop was executed on the baseline batch to check the data structure:
+- **Total Images:** 14 base images
+- **mAP@50 (Overall Accuracy Score):** 0.9%
+- **Precision (Guess Accuracy):** 3.5%
+- **Recall (Detection Rate):** 2.7%
+
+### 🔍 Data Associate Analysis (Why the metrics look like this)
+As a Data Operations project, these low baseline percentages provide a critical insight into the machine learning lifecycle:
+1. **Sample Size Bottleneck:** Deep learning models require significant amounts of data to recognize patterns. A 14-image sample size is excellent for verifying that the labeling categories (`box`, `crate`, `shelf`) work technically, but it is not enough volume for the AI to learn to generalize.
+2. **Environmental Variation:** Warehouse environments contain vast differences in lighting, shadows, and camera
+
