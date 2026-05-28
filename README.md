@@ -19,3 +19,6 @@ To ensure high-fidelity inputs that prevent system blind spots, the following op
 ## 📉 Data Analysis & Scalability Framework
 - **Operational Reality:** A 14-image batch acts as a baseline validation loop.
 - **Scaling Action Plan:** To meet production standards for active tracking, the dataset would be expanded to include hundreds of human-verified entries focusing on damaged packaging profiles, multi-tier shelf stacking variations, and swift transit blur corrections.
+
+
+![Warehouse Annotations](1.png)
